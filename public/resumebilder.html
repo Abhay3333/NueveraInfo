@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles can be added here */
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-2xl font-semibold">Resume Builder</h1>
+        </div>
+    </header>
+
+    <section class="container mx-auto my-6 p-4 bg-white rounded-lg shadow">
+        <form>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block mb-2">First Name</label>
+                    <input type="text" class="w-full p-2 border rounded-md" placeholder="John">
+                </div>
+                <div>
+                    <label class="block mb-2">Last Name</label>
+                    <input type="text" class="w-full p-2 border rounded-md" placeholder="Doe">
+                </div>
+            </div>
+
+            <!-- Add more input fields for other resume sections -->
+
+            <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded-md">Generate Resume</button>
+        </form>
+    </section>
+
+    <footer class="bg-gray-300 py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Resume Builder. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

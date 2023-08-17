@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold text-center mb-6">Nuevera Infotech Jobs</h2>
+
+        <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+            <div>
+                <p class="text-sm font-bold text-black-500 dark:text-gray-400">
+                    Create an account
+                    <a
+                        href="jobprovider.html"
+                        class="font-medium text-blue-600 hover:underline dark:text-primary-500"
+                        >(Signup as an employer)</a>
+                    
+                </p>
+            </div>
+
+            <!-- Full Name -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold" for="fullName">Full Name*</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" type="text"
+                    id="fullName" name="fullName" required>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">Contact Information*</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="tel" name="contactNumber" placeholder="Contact Number" required>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="email" name="email" placeholder="Email Id" required>
+                <textarea class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    name="address" placeholder="Address" required></textarea>
+            </div>
+
+            <!-- Personal Information -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">Personal Information</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="date" name="dob" placeholder="Date of Birth">
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="preferredLanguages" placeholder="Preferred languages">
+            </div>
+
+            <!-- Educational Background -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">Educational Background</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="highestQualification" placeholder="Highest level of qualification">
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="educationalInstitute" placeholder="Name of Educational Institutes attended">
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="graduation" placeholder="Graduation">
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    type="text" name="specialization" placeholder="Specialization Details">
+            </div>
+
+            <!-- Work Experience -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">Work Experience*</label>
+                <input class="mr-2" type="radio" name="experience" value="Fresher" required> Fresher
+                <input class="mr-2" type="radio" name="experience" value="Experienced" required> Experienced
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="number" name="yearsOfExperience" placeholder="Number of Years of Experience">
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="employerName" placeholder="Name of Employer">
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="employmentDuration" placeholder="Duration">
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    type="text" name="jobTitle" placeholder="Job Title">
+            </div>
+
+            <!-- Desired Job Role -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">Desired Job Role</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="desiredJobTitle" placeholder="Job title/position" required>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="preferredLocation" placeholder="Preferred location" required>
+                <select class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    name="jobTime" required>
+                    <option value="Full Time">Full Time</option>
+                    <option value="Part Time">Part Time</option>
+                </select>
+            </div>
+
+            <!-- Upload Resume -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">Upload Resume*</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" type="file"
+                    name="resume" required>
+            </div>
+
+            <!-- Create Username and Password -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">Create Username*</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="username" required>
+                <label class="block mb-2 font-bold">Password*</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    type="password" name="password" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" type="submit">Submit</button>
+            <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                Go back to
+                <a
+                    href="login.html"
+                    class="font-medium text-blue-600 hover:underline dark:text-primary-500"
+                    >Login</a
+                >
+        </form>
+    </div>
+</body>
+
+</html>

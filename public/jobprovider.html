@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Registration Form</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold text-center mb-6">Nuevera Infotech Jobs</h1>
+        <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+            <div>
+                <p class="text-sm font-bold text-black-500 dark:text-gray-400">
+                    Create an account
+                
+                <a
+                        href="signupcandidate.html"
+                        class="font-medium text-blue-600 hover:underline dark:text-primary-500"
+                        >(Signup as an Job seeker)</a>
+                    
+                </p>
+                <br/>    
+                
+            </div>
+            <!-- Company's Details -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">Company's Details*</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="companyName" placeholder="Company's Name" required>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="industrySector" placeholder="Industry or Sector" required>
+                <textarea class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    name="companyOverview" placeholder="Company's Brief Overview" required></textarea>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="url" name="companyWebsite" placeholder="Company's Website">
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="companySize" placeholder="Company's Size">
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    type="text" name="companyLocation" placeholder="Company's Location">
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    type="file" name="companyLogo"><p>(Upload company's logo)</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">Contact Information*</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="contactPersonName" placeholder="Contact Person's Name" required>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="tel" name="contactPersonNumber" placeholder="Contact Person's Number" required>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    type="email" name="contactPersonEmail" placeholder="Contact Person's Email Id" required>
+            </div>
+
+            <!-- Create Username and Password -->
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">Create Username*</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 mb-2"
+                    type="text" name="username" required>
+                <label class="block mb-2 font-bold">Password*</label>
+                <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    type="password" name="password" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" type="submit">Submit</button>
+            <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                Go back to
+                <a
+                    href="login.html"
+                    class="font-medium text-blue-600 hover:underline dark:text-primary-500"
+                    >Login</a
+                >
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
